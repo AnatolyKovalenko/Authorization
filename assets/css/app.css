@@ -1,0 +1,12 @@
+html, body {
+	background: url(../img/pentagon.png) repeat;
+  height: 100%;
+}
+td{
+	cursor: pointer;
+}
+#global {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

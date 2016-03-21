@@ -1,0 +1,23 @@
+﻿<h1 id="user-name">
+  user name: {{ userName }}
+</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody ng-repeat="(key, val) in products">
+    <tr ng-click="open(key)">
+      <td>{{ val.id }}</td>
+      <td>{{ val.name }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button ng-click="signOut()" class="btn btn-danger">
+  Sign Out
+</button>
